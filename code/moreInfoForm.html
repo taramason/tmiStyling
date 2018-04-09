@@ -1,0 +1,49 @@
+<div class="action content attention-content">
+  <script id="program-inquiry-success-template" type="text/template">
+    <h3>Thank You!</h3> 
+    <p>Thank you for your interest in TMI.</p>
+  </script>
+  <script id="crm-success-template" type="text/template">
+    <p>Check your inbox for more information.</p>
+  </script>
+  <script id="crm-failure-template" type="text/template">
+    <p>An error occurred sending your inquiry to our Student Success team. If you continue to have issues, please
+      <a href="mailto:csu_online_questions@mail.colostate.edu">send them an email</a>, or call
+      <a href="tel:+19704924898">(970) 492-4898</a>
+    </p>
+  </script> 
+  <h3>Request Information</h3> 
+  <script id="has-active-interest-template" type="text/template">
+    <p>Thank you for your interest. Our records indicate that you are already receiving email information about this program.
+      Email the
+      <a href="mailto:csu_online_questions@mail.colostate.edu">Student Success Team</a> or call (970) 492-4898 if you have additional questions about this program or need assistance.</p>
+  </script> 
+ 
+  <form id="program-inquiry-email-form" class="request-info" action="/dotCMS/program/crm-inquiry/submit" method="post">
+    <div>
+      <label class="visually-hidden" for="first-name">First name</label>
+      <input class="textbox" id="first-name" name="firstName" type="text" value="" placeholder="First name" required="required">
+    </div> 
+    <div>
+      <label class="visually-hidden" for="last-name">Last name</label>
+      <input class="textbox" id="last-name" type="text" name="lastName" value="" placeholder="Last name" required="required">
+    </div> 
+    <div>
+      <label class="visually-hidden" for="email-address">Email address</label>
+      <input class="textbox" id="email-address" type="email" name="emailAddress" value="" placeholder="Email address" required="required">
+    </div> 
+    <div>
+      <label class="visually-hidden" for="phone-number">Phone number</label>
+      <input class="textbox" id="phone-number" type="phone" name="phoneNumber" value="" placeholder="Phone number (optional)">
+    </div> 
+    <input type="hidden" name="suborigin" value="Program page"> 
+    <input type="hidden" name="salesforceProgramId" id="salesforceProgramId" value="a0Zo0000004YhwFEAS"> 
+    <div class="question-answer">
+      <label for="Answer">What is 6 + 6?</label>
+      <input type="text" class="text" name="antiSpamAnswer" id="Answer" title="Enter the sum of 6 + 6." tabindex="-1">
+    </div> 
+    <input type="hidden" name="formUri" value="/certificates/accounting-ethics-and-auditing/index.dot"> 
+    <input type="hidden" name="formLoadTime" value="1521660171287"> 
+    <button type="submit" class="blue-button full-width">Send</button>
+  </form>
+</div>
